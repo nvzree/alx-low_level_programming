@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+/**
+ *main - Entry point
+ *
+ *Return: Always 0 (Success)
+ */
+int main(void)
+{
+	char letters;
+
+	letters = 'a';
+	while (letters <= 'z')
+	{
+		if (letters != 'q' && letters != 'e')
+		{
+			putchar(letters);
+		}
+		letters++;
+	}
+	putchar('\n');
+	return (0);
+}
