@@ -13,13 +13,9 @@ int main(void)
 	base10 = 0;
 	while (base10 < 10)
 	{
-		printf("%d", base10);
-		if (base10 < 9)
-		{
-			printf(", ");
-		}
+		putchar(base10 + '0');
 		base10++;
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
