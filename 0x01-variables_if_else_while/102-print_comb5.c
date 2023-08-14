@@ -10,29 +10,21 @@ int main(void)
 {
 	int x;
 	int y;
-	int x1;
-	int y1;
 
-	for (x = '0'; x <= '9'; x++)
+	for (x = 0; x <= 99; x++)
 	{
-		for (y = '0'; y <= '9'; y++)
+		for (y = x + 1; y <= 99; y++)
 		{
-			for (x1 = x; x1 <= '9'; x1++)
-			{
-				for (y1 = y + 1; y1 <= '9'; y1++)
-				{
-					putchar(x);
-					putchar(y);
-					putchar(' ');
-					putchar(x1);
-					putchar(y1);
+			putchar((x / 10) + '0');
+			putchar((x % 10) + '0');
+			putchar(' ');
+			putchar((y / 10) + '0');
+			putchar((y % 10) + '0');
 
-					if (!((x == '9' && y == '8') && (x1 == '9' && y1 == '9')))
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
+			if (x != 98 || y != 99)
+			{
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
