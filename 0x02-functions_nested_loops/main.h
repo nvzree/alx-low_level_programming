@@ -33,4 +33,11 @@ int _islower(int c);
  * Return: 1 if lowercase or uppercase, 0 if otherwise
  */
 int _isalpha(int c);
+
+/**
+ * print_sign - prints the sign of a number
+ * @n: character to check
+ * Return: 1 if n greater than 0, 0 if n is 0, -1 if n is less than zer    o
+ */
+int print_sign(int n);
 #endif
