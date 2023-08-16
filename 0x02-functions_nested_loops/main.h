@@ -49,4 +49,10 @@ int print_sign(int n);
 int _abs(int n);
 
 
+/**
+ * print_last_digit - prints last digit of a number
+ * @n: character to check
+ * Return: returns the value of the last digit
+ */
+int print_last_digit(int n);
 #endif
