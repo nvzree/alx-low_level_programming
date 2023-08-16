@@ -80,4 +80,10 @@ int add(int a, int b);
  */
 void print_to_98(int n);
 
+/**
+ * times_table - prints n times table
+ */
+void print_times_table(int n);
+
+
 #endif
