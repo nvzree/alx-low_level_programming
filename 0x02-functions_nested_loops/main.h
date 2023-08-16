@@ -40,4 +40,13 @@ int _isalpha(int c);
  * Return: 1 if n greater than 0, 0 if n is 0, -1 if n is less than zer    o
  */
 int print_sign(int n);
+
+/**
+ *int _abs - computes absolute value of an integer
+ *@n: integer value
+ *Returns: absolute value
+ */
+int _abs(int n);
+
+
 #endif
