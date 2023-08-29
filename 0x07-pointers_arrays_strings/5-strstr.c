@@ -12,15 +12,22 @@ char *_strstr(char *haystack, char *needle)
 {
 	int i;
 	int j;
+	int x;
 
-	for (i = 0; haystack[i] != '\0'; i++)
+	for (i = 0; haystack[i] != '\0'; i++) /* iterate through haystack */
 	{
-		for (j = 0; *(needle + j) != '\0'; j++)
+		/* if a byte matches needle */
+		/* iterate through needle until match ends */
+		if (haystack[i] == needle[0])
 		{
-			if (haystack[i] == needle[0])
+			x = i;
+			for (j = 0; needle[j] != '\0'; j++)
 			{
-				return (&haystack[i]);
+				if (haystack[i + j] != needle[j])
+					break;
 			}
+			if (needle[j] == '\0')
+				return (&haystack[x]);
 		}
 	}
 	return (NULL);
