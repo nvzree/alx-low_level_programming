@@ -21,18 +21,20 @@ int main(int argc, char *argv[])
 
 	for (i = 1; argv[i]; i++)
 	{
+		int isDigit = 1; /* flag to track if entire argument is a digit*/
 		for (j = 0; argv[i][j]; j++)
 		{
-			if (argv[i][j] >= '0' && argv[i][j] <= '9')
+			if (!(argv[i][j] >= '0' && argv[i][j] <= '9'))
 			{
-				sum += atoi(argv[i]);
-				break;/* exit inner loop when digit is found*/
-			}
-			else
-			{
+				isDigit = 0; /*set flag to indicate a non digit character*/
 				printf("Error\n");
 				return (1);
 			}
+		}
+
+		if (isDigit)
+		{
+			sum += atoi(argv[i]);	
 		}
 	}
 	printf("%d\n", sum);
