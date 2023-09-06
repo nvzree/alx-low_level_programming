@@ -2,8 +2,9 @@
 
 /**
  * free_grid - frees a 2dimensional grid
+ * previously created by your alloc_grid function
  * @grid: pointer to integer
- * @height: number of rows
+ * @height: height of array
  */
 
 void free_grid(int **grid, int height)
