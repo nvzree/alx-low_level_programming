@@ -22,6 +22,7 @@ int main(int argc, char *argv[])
 	for (i = 1; argv[i]; i++)
 	{
 		int isDigit = 1; /* flag to track if entire argument is a digit*/
+
 		for (j = 0; argv[i][j]; j++)
 		{
 			if (!(argv[i][j] >= '0' && argv[i][j] <= '9'))
@@ -34,7 +35,7 @@ int main(int argc, char *argv[])
 
 		if (isDigit)
 		{
-			sum += atoi(argv[i]);	
+			sum += atoi(argv[i]);
 		}
 	}
 	printf("%d\n", sum);
