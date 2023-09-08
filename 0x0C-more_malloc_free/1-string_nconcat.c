@@ -20,8 +20,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 	if (n >= strlen(s2))
 		n = strlen(s2);
-	if (n < 0)
-		return (NULL);
 
 	new_concat = malloc(sizeof(char) * (len1 + n + 1));
 	if (new_concat == NULL)
