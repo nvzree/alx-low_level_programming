@@ -1,5 +1,6 @@
 #ifndef VARIADIC_FUNCTION_H
 #define VARIADIC_FUNCTION_H
+#include <stdarg.h>
 
 int sum_them_all(const unsigned int n, ...);
 
@@ -28,4 +29,5 @@ typedef struct dt
 	char letter;
 	void (*func)(va_list);
 } datatype;
+
 #endif
