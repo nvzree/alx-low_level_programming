@@ -18,4 +18,14 @@ void print_all(const char * const format, ...);
  */
 int _putchar(char c);
 
+/**
+ * struct dt - struct
+ * @letter: letter signifying data type
+ * @func: function ptr
+ */
+typedef struct dt
+{
+	char letter;
+	void (*func)(va_list);
+} datatype;
 #endif
