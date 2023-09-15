@@ -3,10 +3,11 @@
 /**
  * print_name - prints name
  * @name: string pointer
- * @f: function pointer
+ * @f: function pointer to function to execute
  */
 
 void print_name(char *name, void (*f)(char *))
 {
-	f(name);
+	if (name != NULL && f != NULL)
+		f(name);
 }
