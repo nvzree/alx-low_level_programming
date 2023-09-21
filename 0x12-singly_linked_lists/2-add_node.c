@@ -3,7 +3,7 @@
 /**
  * _strlen - calculates the length of string
  * @str: string
- * Retrun: length of string
+ * Return: length of string
  */
 
 int _strlen(const char *str)
@@ -12,9 +12,9 @@ int _strlen(const char *str)
 
 	for (len = 0; str[len] != '\0'; len++)
 	{
-		
+
 	}
-	return len;
+	return (len);
 }
 
 /**
