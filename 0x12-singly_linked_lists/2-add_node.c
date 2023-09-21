@@ -13,6 +13,8 @@ list_t *add_node(list_t **head, const char *str)
 
 	if (str == NULL) /* validate input*/
 		return (NULL);
+	if (strdup(str) == NULL)
+		return (NULL);
 
 	new = malloc(sizeof(list_t)); /*malloc for new node*/
 	if (new == NULL)
