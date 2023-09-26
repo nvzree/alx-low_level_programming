@@ -2,7 +2,7 @@
 
 /**
  * listint_len - returns the number of elements in a linked listint_t list
- * h@: pointer to struct
+ * @h: pointer to struct
  * Return: number of elements
  */
 
